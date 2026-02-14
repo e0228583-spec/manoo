@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eman | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #00f7ff;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00f7ff;
+            text-shadow: 0 0 10px #00f7ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 80vh;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 45px;
+            animation: fadeIn 2s ease;
+        }
+
+        .content span {
+            color: #00f7ff;
+            text-shadow: 0 0 15px #00f7ff;
+        }
+
+        .content h3 {
+            margin: 15px 0;
+            font-weight: 300;
+        }
+
+        .content p {
+            max-width: 500px;
+            margin: auto;
+            opacity: 0.8;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #00f7ff;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s;
+            box-shadow: 0 0 15px #00f7ff;
+        }
+
+        button:hover {
+            background: transparent;
+            color: #00f7ff;
+            border: 2px solid #00f7ff;
+            box-shadow: 0 0 25px #00f7ff;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 8%;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            width: 250px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: 0.4s;
+            box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px #00f7ff;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            .content h1 {
+                font-size: 30px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">Eman.</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h1>Hello, I'm <span>Eman</span></h1>
+            <h3>Frontend Developer</h3>
+            <p>I create stylish, responsive and modern websites with animations and clean UI.</p>
+            <button>Hire Me</button>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Semantic and clean structure.</p>
+        </div>
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Modern styling & animations.</p>
+        </div>
+        <div class="card">
+            <h2>Responsive</h2>
+            <p>Mobile friendly layouts.</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
